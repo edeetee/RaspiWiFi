@@ -7,8 +7,6 @@ import sys
 def install_prereqs():
 	project_path = os.path.dirname(os.path.abspath(__file__))
 	
-	print("Updating Apt...")
-	os.system('apt update')
 	print("Installing prerequisites via Dnf...")
 	os.system('dnf install python3 bundler libsqlite3-dev isc-dhcp-server hostapd libxml2-dev libxslt-dev -y')
 	print("Installing necessary Ruby Gems. This can take a few minutes...")
